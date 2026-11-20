@@ -1,7 +1,7 @@
 #!/system/bin/sh
 sleep 3
-echo 100 > /proc/sys/vm/swappiness
-echo 200 > /proc/sys/vm/vfs_cache_pressure
+echo 60 > /proc/sys/vm/swappiness
+echo 100 > /proc/sys/vm/vfs_cache_pressure
 echo '57344 57344 57344' > /proc/sys/vm/min_free_kbytes 2>/dev/null
 if [ -f /sys/block/zram0/comp_algorithm ]; then
     echo zstd > /sys/block/zram0/comp_algorithm 2>/dev/null
