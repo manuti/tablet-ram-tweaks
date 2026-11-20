@@ -34,7 +34,7 @@ fi
 #    Valores en páginas de 4KB: mata cached apps ANTES de tocar foreground
 #    Default suele ser ~72,90,108,126,144,180 MB → esto mata antes
 if [ -f /sys/module/lowmemorykiller/parameters/minfree ]; then
-    echo "18432,23040,27648,32256,55296,82944" > /sys/module/lowmemorykiller/parameters/minfree
+    echo "9216,12288,15360,18432,27648,36864" > /sys/module/lowmemorykiller/parameters/minfree
 fi
 
 # 6. Swap file secundario en /data (512 MB) - respaldo si zram se llena
