@@ -1,0 +1,6 @@
+id=ram-tweaks
+name=RAM Tweaks 2GB Tablet
+version=1.0
+versionCode=1
+author=manuti
+description=Optimiza RAM en tablets 2GB: swappiness 100, zram zstd, LMK agresivo, swap file 512MB
